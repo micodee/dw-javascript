@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Switch Case</title>
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      let undian = prompt(`selamat anda mendapatkan undian, pilih hadiah 1-3`);
+      let hadiah = "";
+
+      switch (undian) {
+        case "1":
+          hadiah = "kaos";
+          break;
+        case "2":
+          hadiah = "sepatu";
+          break;
+        case "3":
+          hadiah = "stiker";
+          break;
+
+        default:
+          document.write(`maaf inputan anda salah`);
+      }
+
+      if (hadiah === "") {
+        document.write(`<br>kamu gagal dapat hadiah`);
+      } else {
+        document.write(`Selamat kamu dapat hadiah:  ${hadiah}`);
+      }
+    </script>
+  </body>
+</html>
